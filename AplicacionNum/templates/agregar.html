@@ -1,0 +1,11 @@
+{% extends "index.html" %}
+{% block titulo %} Agregar Producto {% endblock %}
+
+{% block content %}
+<form method="post">
+    {% csrf_token %}
+    {{ form }}
+    <button>Agergar Producto</button>
+</form>
+
+{% endblock %}
